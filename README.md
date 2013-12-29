@@ -1,7 +1,7 @@
 MD5.js
 =========
 
-MD5.js は、MD5 ハッシュを計算する機能を提供します。
+MD5.js is calc MD5 hash.
 
 # Install, Setup modules
 
