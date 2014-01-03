@@ -1,6 +1,6 @@
 {
   "name":           "uupaa.md5.js",
-  "version":        "0.8.3",
+  "version":        "0.8.4",
   "description":    "MD5 implement.",
   "url":            "https://github.com/uupaa/MD5.js",
   "keywords":       ["MD5", "Hash", "util", "uupaa"],
@@ -11,7 +11,7 @@
   "devDependencies": {
     "uupaa.help.js": ">= 0.8.1",
     "uupaa.task.js": ">= 0.8.0",
-    "uupaa.binary.js": ">= 0.8.0"
+    "uupaa.wordarray.js": ">= 0.8.0"
   },
   "lib":            "./lib/",
   "main":           "index.js",
