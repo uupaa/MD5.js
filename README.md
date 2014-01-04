@@ -3,6 +3,11 @@ MD5.js
 
 MD5.js is calc MD5 hash.
 
+
+# API Document
+
+https://github.com/uupaa/MD5.js/wiki/MD5
+
 # Install, Setup modules
 
 ```sh
@@ -28,9 +33,3 @@ $ npm test
     test success.
     ok.
 ```
-
-# API Document
-
-https://github.com/uupaa/MD5.js/wiki/MD5
-
-
