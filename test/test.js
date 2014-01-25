@@ -2,7 +2,7 @@ new Test().add([
         testMD5String,
         testMD5Binary,
     ]).run().worker(function(err, test) {
-        if (!err) {
+        if (!err && typeof MD5_ !== "undefined") {
             MD5 = MD5_;
             new Test(test).run().worker();
         }
