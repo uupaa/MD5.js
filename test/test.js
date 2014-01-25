@@ -1,7 +1,12 @@
 new Test().add([
         testMD5String,
         testMD5Binary,
-    ]).run();
+    ]).run().worker(function(err, test) {
+        if (!err) {
+            MD5 = MD5_;
+            new Test(test).run().worker();
+        }
+    });
 
 function testMD5String(next) {
 

@@ -1,23 +1,27 @@
 {
   "name":           "uupaa.md5.js",
-  "version":        "0.8.6",
+  "version":        "0.8.7",
   "description":    "MD5 implement.",
   "url":            "https://github.com/uupaa/MD5.js",
   "keywords":       ["MD5", "Hash", "util", "uupaa"],
-  "author":         "uupaa <uupaa.js@gmail.com>",
-  "license":        "MIT",
-  "repository":     { "type": "git", "url": "https://github.com/uupaa/MD5.js.git" },
-  "contributors":   [],
+  "repository": {
+    "type":         "git",
+    "url":          "https://github.com/uupaa/MD5.js.git"
+  },
+  "scripts": {
+    "start":        "node node_modules/uupaa.minify.js --keep --output ./lib/MD5.min.js ./lib/MD5.js",
+    "test":         "NODE_ENV=production NODE_PATH=lib node --harmony test/index.node.js; open test/index.html"
+  },
   "devDependencies": {
-    "uupaa.help.js": ">= 0.8.1",
-    "uupaa.task.js": ">= 0.8.0",
-    "uupaa.test.js": ">= 0.8.0",
-    "uupaa.bytearray.js": ">= 0.8.0"
+    "uupaa.help.js":    "",
+    "uupaa.task.js":    "",
+    "uupaa.test.js":    "",
+    "uupaa.minify.js":  "",
+    "uupaa.bytearray.js": ""
   },
   "lib":            "./lib/",
-  "main":           "index.js",
-  "scripts": {
-    "start":        "npm install",
-    "test":         "NODE_ENV=production NODE_PATH=lib node --harmony test/index.node.js; open test/index.html"
-  }
+  "main":           "./index.js",
+  "author":         "uupaa <uupaa.js@gmail.com>",
+  "license":        "MIT",
+  "contributors":   []
 }
