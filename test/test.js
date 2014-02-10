@@ -2,9 +2,12 @@ new Test().add([
         testMD5String,
         testMD5Binary,
     ]).run().worker(function(err, test) {
-        if (!err && typeof MD5_ !== "undefined") {
-            MD5 = MD5_;
-            new Test(test).run().worker();
+        if (!err) {
+            var undo = Test.swap(MD5, MD5_);
+
+            new Test(test).run(function(err, test) {
+                undo = Test.undo(undo);
+            });
         }
     });
 
