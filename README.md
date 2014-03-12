@@ -1,35 +1,64 @@
 MD5.js
 =========
 
-MD5.js is calc MD5 hash.
+calc MD5 hash.
 
-
-# API Document
+# Document
 
 https://github.com/uupaa/MD5.js/wiki/MD5
 
-# Install, Setup modules
+# How to use
 
-```sh
-$ brew install closure-compiler
-
-$ git clone git@github.com:uupaa/MD5.js.git
-$ cd MD5.js
-$ npm install
+```js
+<script src="lib/MD5.js">
+<script>
+// for Browser
+console.log( MD5("aaa") ); // 47bce5c74f589f4867dbd57e9ca9f808
+</script>
 ```
 
-# Minify
+```js
+// for WebWorkers
+importScripts("lib/MD5.js");
 
-```sh
-$ npm start
-
-  or
-
-$ node node_modules/uupaa.minify.js --keep --output ./lib/MD5.min.js ./lib/MD5.js
+console.log( MD5("aaa") ); // 47bce5c74f589f4867dbd57e9ca9f808
 ```
 
-# Test
+```js
+// for Node.js
+var MD5 = require("lib/MD5.js");
 
-```sh
-$ npm test
+console.log( MD5("aaa") ); // 47bce5c74f589f4867dbd57e9ca9f808
 ```
+
+# for Developers
+
+1. Install development dependency tools
+
+    ```sh
+    $ brew install closure-compiler
+    $ brew install node
+    $ npm install -g plato
+    ```
+
+2. Clone Repository and Install
+
+    ```sh
+    $ git clone git@github.com:uupaa/MD5.js.git
+    $ cd MD5.js
+    $ npm install
+    ```
+
+3. Build and Minify
+
+    `$ npm run build`
+
+4. Test
+
+    `$ npm run test`
+
+5. Lint
+
+    `$ npm run lint`
+
+

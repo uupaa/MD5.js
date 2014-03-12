@@ -1,6 +1,6 @@
 {
   "name":           "uupaa.md5.js",
-  "version":        "0.8.12",
+  "version":        "0.8.13",
   "description":    "MD5 implement.",
   "url":            "https://github.com/uupaa/MD5.js",
   "keywords":       ["MD5", "Hash", "util", "uupaa"],
@@ -9,13 +9,23 @@
     "url":          "https://github.com/uupaa/MD5.js.git"
   },
   "scripts": {
-    "start":        "node node_modules/uupaa.minify.js --keep --output ./lib/MD5.min.js ./lib/MD5.js",
-    "test":         "NODE_ENV=production NODE_PATH=lib node --harmony test/index.node.js; open test/index.html"
+    "watch":        "node node_modules/uupaa.watch.js --verbose --action build ./lib/MD5.js",
+    "build":        "node node_modules/uupaa.minify.js --keep --option 'formatting pretty_print' --output ./lib/MD5.min.js ./lib/MD5.js",
+    "build-release":"node node_modules/uupaa.minify.js --module all --output ./lib/MD5.min.js",
+    "test":         "NODE_ENV=production NODE_PATH=lib node --harmony test/index.node.js; open test/index.html",
+    "lint":         "plato --title MD5.js --jshint .jshintrc -d lint/plato lib/MD5.js; open lint/plato/index.html"
+  },
+  "build": {
+    "all": { "lib/MD5.js": "" },
+    "node": { },
+    "worker": { },
+    "browser": { }
   },
   "dependencies": {
     "uupaa.bytearray.js": ""
   },
   "devDependencies": {
+    "uupaa.valid.js":   "",
     "uupaa.help.js":    "",
     "uupaa.task.js":    "",
     "uupaa.test.js":    "",
