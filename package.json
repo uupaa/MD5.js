@@ -1,9 +1,9 @@
 {
   "name":           "uupaa.md5.js",
-  "version":        "0.8.14",
+  "version":        "0.8.15",
   "description":    "MD5 implement.",
   "url":            "https://github.com/uupaa/MD5.js",
-  "keywords":       ["MD5", "Hash", "util", "uupaa"],
+  "keywords":       ["MD5", "Hash", "util", "uupaa", "WebModule"],
   "repository": {
     "type":         "git",
     "url":          "https://github.com/uupaa/MD5.js.git"
@@ -18,12 +18,13 @@
   },
   "x-build": {
     "inputs":       ["lib/MD5.js"],
-    "output":       "lib/MD5.min.js"
+    "output":       "release/MD5.min.js"
   },
   "dependencies": {
     "uupaa.bytearray.js": ""
   },
   "devDependencies": {
+    "uupaa.console.js": "",
     "uupaa.valid.js":   "",
     "uupaa.help.js":    "",
     "uupaa.task.js":    "",

@@ -5,7 +5,12 @@ calc MD5 hash.
 
 # Document
 
-https://github.com/uupaa/MD5.js/wiki/MD5
+- https://github.com/uupaa/MD5.js/wiki/MD5
+
+and
+
+- https://github.com/uupaa/WebModule and [slide](http://uupaa.github.io/Slide/slide/WebModule/index.html)
+- https://github.com/uupaa/Help.js and [slide](http://uupaa.github.io/Slide/slide/Help.js/index.html)
 
 # How to use
 
