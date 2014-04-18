@@ -1,6 +1,6 @@
 {
   "name":           "uupaa.md5.js",
-  "version":        "0.8.16",
+  "version":        "0.8.18",
   "description":    "MD5 implement.",
   "url":            "https://github.com/uupaa/MD5.js",
   "keywords":       ["MD5", "Hash", "util", "uupaa", "WebModule"],
