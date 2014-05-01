@@ -1,19 +1,18 @@
-new Test().add([
+var ModuleTest = (function(global) {
+
+return new Test({
+        disable:    false,
+        node:       true,
+        browser:    true,
+        worker:     true,
+        button:     true,
+        both:       true,
+        primary:    global["MD5"],
+        secondary:  global["MD5_"],
+    }).add([
         testMD5String,
         testMD5Binary,
-    ]).run(function(err, test) {
-        if (1) {
-            err || test.worker(function(err, test) {
-                if (!err && typeof MD5_ !== "undefined") {
-                    var name = Test.swap(MD5, MD5_);
-
-                    new Test(test).run(function(err, test) {
-                        Test.undo(name);
-                    });
-                }
-            });
-        }
-    });
+    ]).run().clone();
 
 function testMD5String(next) {
 
@@ -50,4 +49,6 @@ function testMD5Binary(next) {
         next && next.miss();
     }
 }
+
+})((this || 0).self || global);
 
