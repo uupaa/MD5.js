@@ -1,14 +1,12 @@
-var ModuleTest = (function(global) {
+var ModuleTestMD5 = (function(global) {
 
-return new Test({
+return new Test("MD5", {
         disable:    false,
-        node:       true,
         browser:    true,
         worker:     true,
+        node:       true,
         button:     true,
         both:       true,
-        primary:    global["MD5"],
-        secondary:  global["MD5_"],
     }).add([
         testMD5String,
         testMD5Binary,
@@ -21,10 +19,8 @@ function testMD5String(next) {
     var md5HashString = MD5(source);
 
     if (answer === md5HashString) {
-        console.log("testMD5String ok");
         next && next.pass();
     } else {
-        console.log("testMD5String ng");
         next && next.miss();
     }
 }
@@ -42,10 +38,8 @@ function testMD5Binary(next) {
         });
 
     if (match) {
-        console.log("testMD5Binary ok");
         next && next.pass();
     } else {
-        console.log("testMD5Binary ng");
         next && next.miss();
     }
 }
