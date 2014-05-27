@@ -24,15 +24,17 @@
     "files":        ["lib/MD5.js"],
     "output":       "release/MD5.min.js",
     "target":       ["all"],
+    "labels":       ["@dev"],
     "module": {
       "develop":    ["uupaa.valid.js"],
-      "release":    ["uupaa.bytearray.js"]
+      "release":    ["uupaa.datatype.js"]
     }
   },
   "dependencies": {
-    "uupaa.bytearray.js": ""
+    "uupaa.datatype.js": ""
   },
   "devDependencies": {
+    "uupaa.reflection.js": "",
     "uupaa.nodemodule.js": "",
     "uupaa.console.js": "",
     "uupaa.valid.js":   "",

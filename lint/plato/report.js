@@ -8,56 +8,56 @@ __report = {
         "link": "files/lib_MD5_js/index.html"
       },
       "jshint": {
-        "messages": 1
+        "messages": 3
       },
       "complexity": {
         "aggregate": {
-          "line": 5,
+          "line": 1,
           "complexity": {
             "sloc": {
-              "physical": 161,
-              "logical": 81
+              "physical": 149,
+              "logical": 73
             },
-            "cyclomatic": 16,
+            "cyclomatic": 15,
             "halstead": {
               "operators": {
-                "distinct": 34,
-                "total": 221,
+                "distinct": 30,
+                "total": 211,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
               "operands": {
-                "distinct": 162,
-                "total": 479,
+                "distinct": 156,
+                "total": 471,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
-              "length": 700,
-              "vocabulary": 196,
-              "difficulty": 50.26543209876543,
-              "volume": 5330.296890880645,
-              "effort": 267929.67643482157,
-              "bugs": 1.7767656302935484,
-              "time": 14884.982024156754
+              "length": 682,
+              "vocabulary": 186,
+              "difficulty": 45.28846153846154,
+              "volume": 5141.706309175678,
+              "effort": 232859.96842516775,
+              "bugs": 1.7139021030585593,
+              "time": 12936.664912509319
             },
-            "params": 6
+            "params": 4
           }
         },
         "module": "lib/MD5.js",
-        "maintainability": 54.10130497869213
+        "maintainability": 52.587389247026955
       }
     }
   ],
   "summary": {
     "total": {
-      "sloc": 161,
-      "maintainability": 54.10130497869213
+      "sloc": 149,
+      "maintainability": 52.587389247026955
     },
     "average": {
-      "sloc": 161,
-      "maintainability": "54.10"
+      "sloc": 149,
+      "maintainability": "52.59"
     }
   }
 }

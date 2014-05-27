@@ -29,7 +29,7 @@ function testMD5Binary(next) {
 
     var source = "aaa";
     var answer = "47bce5c74f589f4867dbd57e9ca9f808";
-    var md5HashArray = MD5.encode(ByteArray.fromString(source));
+    var md5HashArray = MD5.encode(DataType["Array"].fromString(source));
 
     var match = md5HashArray.every(function(value, index) {
             var hex = parseInt(answer.slice(index * 2, index * 2 + 2), 16);
