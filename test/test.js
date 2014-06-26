@@ -12,20 +12,20 @@ return new Test("MD5", {
         testMD5Binary,
     ]).run().clone();
 
-function testMD5String(next) {
+function testMD5String(test, pass, miss) {
 
     var source = "aaa";
     var answer = "47bce5c74f589f4867dbd57e9ca9f808";
     var md5HashString = MD5(source);
 
     if (answer === md5HashString) {
-        next && next.pass();
+        test.done(pass());
     } else {
-        next && next.miss();
+        test.done(miss());
     }
 }
 
-function testMD5Binary(next) {
+function testMD5Binary(test, pass, miss) {
 
     var source = "aaa";
     var answer = "47bce5c74f589f4867dbd57e9ca9f808";
@@ -39,9 +39,9 @@ function testMD5Binary(next) {
         });
 
     if (match) {
-        next && next.pass();
+        test.done(pass());
     } else {
-        next && next.miss();
+        test.done(miss());
     }
 }
 
