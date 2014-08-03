@@ -1,9 +1,9 @@
 {
   "name":           "uupaa.md5.js",
-  "version":        "0.9.2",
+  "version":        "0.9.3",
   "description":    "MD5 implement.",
   "url":            "https://github.com/uupaa/MD5.js",
-  "keywords":       ["MD5", "Hash", "util", "uupaa", "WebModule"],
+  "keywords":       ["MD5", "Hash", "util", "uupaa", "WebModule", "Unstable"],
   "repository": {
     "type":         "git",
     "url":          "https://github.com/uupaa/MD5.js.git"
@@ -22,13 +22,14 @@
     "server":       "http-server -c-1 -p 8585 &",
     "server-stop":  "",
     "server-kill":  "killall -- node /usr/local/bin/http-server -p 8585 ; exit 0",
+    "hint":         "jshint lib/*.js",
     "lint":         "node node_modules/uupaa.plato.js; open lint/plato/index.html"
   },
   "x-build": {
     "source":       ["lib/MD5.js"],
     "output":       "release/MD5.min.js",
     "target":       ["all"],
-    "labels":       ["@dev"],
+    "label":        ["@dev"],
     "module": {
       "develop":    ["uupaa.valid.js"],
       "release":    ["uupaa.datatype.js"]
