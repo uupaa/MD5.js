@@ -1,6 +1,6 @@
 {
   "name": "uupaa.md5.js",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "MD5 implement.",
   "url": "https://github.com/uupaa/MD5.js",
   "keywords": [
@@ -29,6 +29,7 @@
     "hint": "jshint lib/*.js",
     "score": "node ../WebModule/run/score.js; open lint/plato/index.html",
     "patch": "node ../WebModule/run/patch.js",
+    "setup": "node ../WebModule/run/setup.js",
     "start": "cd ../; Python -m SimpleHTTPServer 8000 &",
     "stop": "killall -- Python -m SimpleHTTPServer 8000; exit 0"
   },
